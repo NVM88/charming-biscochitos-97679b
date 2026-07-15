@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+	/>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova Wealth Management</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+	
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+
+
+<body>
+
+
+<!-- ===========================================
+NAVBAR
+=========================================== -->
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+
+            <img src="images/logo.png" alt="Nova Wealth Management">
+
+        </a>
+
+        <nav>
+
+<ul>
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+
+<li>
+<a href="aboutus.html">
+About Us
+</a>
+</li>
+
+
+<li>
+<a href="services.html">
+Our Services
+</a>
+</li>
+
+
+<li>
+<a href="contact.html">
+Contact Us
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+        <a href="contact.html" class="btn-primary">
+Book Consultation
+</a>
+
+    </div>
+
+</header>
+<!-- ===========================================
+CONTACT HERO
+=========================================== -->
+
+<section class="contact-hero">
+
+<div class="container">
+
+<span>
+CONTACT US
+</span>
+
+<h1>
+Let's Start Your
+Financial Journey
+</h1>
+
+<p>
+Complete the enquiry form below and our team will contact you
+to discuss suitable financial solutions based on your financial needs.
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- ===========================================
+CONTACT FORM
+=========================================== -->
+
+<section class="contact-form-section">
+
+<div class="container">
+
+<form class="contact-form" id="contactForm">
+
+
+<p class="required-note">
+* Required Fields
+</p>
+
+<!-- ===========================================
+PERSONAL INFORMATION
+=========================================== -->
+
+<div class="form-section">
+
+<h2>Personal Information</h2>
+
+<div class="form-row">
+
+    <div class="form-group">
+        <label>Full Name *</label>
+        <input type="text"
+       name="name"
+       placeholder="Enter your full name"
+       required>
+    </div>
+
+    <div class="form-group">
+        <label>Contact Number *</label>
+        <input type="tel"
+       name="phone"
+       placeholder="Enter your contact number"
+       required>
+    </div>
+
+</div>
+
+<div class="form-row">
+
+    <div class="form-group">
+        <label>Email Address *</label>
+        <input type="email"
+       name="email"
+       placeholder="Enter your email address"
+       required>
+    </div>
+
+    <div class="form-group">
+		<label>Company or department *</label>
+        <input type="text"
+       name="company"
+       placeholder="Enter your company or department">
+       
+    </div>
+
+</div>
+
+</div>
+
+
+<!-- ===========================================
+EMPLOYMENT INFORMATION
+=========================================== -->
+
+<div class="form-section">
+
+<h2>Employment Information</h2>
+
+<div class="form-row">
+
+    <div class="form-group">
+        <label>Position / Occupation</label>
+        <input type="text"
+       name="position"
+       placeholder="Enter your position or occupation">
+    </div>
+
+    <div class="form-group">
+        <label>Average Monthly Income</label>
+
+        <select name="income">
+
+            <option selected disabled>Select Monthly Income</option>
+
+            <option>Below RM2,000</option>
+            <option>RM2,001 – RM4,000</option>
+            <option>RM4,001 – RM6,000</option>
+            <option>RM6,001 – RM8,000</option>
+            <option>Above RM8,000</option>
+
+        </select>
+
+    </div>
+
+</div>
+
+</div>
+
+
+<!-- ===========================================
+FINANCIAL ENQUIRY
+=========================================== -->
+
+<div class="form-section">
+
+<h2>Financial Enquiry</h2>
+
+<div class="form-row">
+
+    <div class="form-group">
+
+        <label>Financial Concern</label>
+
+        <select name="concern">
+
+            <option selected disabled>Select Your Financial Concern</option>
+
+            <option>Personal Financing</option>
+            <option>Business Financing</option>
+            <option>Debt Management</option>
+            <option>Property Financing</option>
+            <option>Cash Flow Improvement</option>
+            <option>Others</option>
+
+        </select>
+
+    </div>
+
+    <div class="form-group">
+
+        <label>Service Enquiry</label>
+
+        <select name="service">
+
+            <option selected disabled>Select A Service</option>
+
+            <option>Personal Loan</option>
+            <option>SME Loan</option>
+            <option>Business Loan</option>
+            <option>Debt Consolidation Loan</option>
+            <option>House Refinance Loan</option>
+            <option>Cash Out Property</option>
+
+        </select>
+
+    </div>
+
+</div>
+
+</div>
+
+
+<!-- ===========================================
+ADDITIONAL INFORMATION
+=========================================== -->
+
+<div class="form-section">
+
+<h2>Additional Information</h2>
+
+<div class="form-group">
+
+    <label>Additional Messages</label>
+
+    <textarea
+	name="message"
+	rows="6"
+	placeholder="Please provide additional information regarding your enquiry..."></textarea>
+
+</div>
+
+</div>
+
+
+<!-- ===========================================
+PRIVACY
+=========================================== -->
+
+<div class="privacy-box">
+
+<label class="checkbox">
+
+    <input type="checkbox" required>
+
+    <span>
+    I have read and agree to the
+    <a href="#" class="policy-link">Privacy Policy</a>
+    and consent to Nova Wealth Management collecting and using my personal information for responding to my enquiry.
+</span>
+
+</label>
+
+</div>
+
+
+<!-- ===========================================
+BUTTON
+=========================================== -->
+
+<div class="submit-area">
+
+<button type="submit" class="btn-primary">
+
+Submit Enquiry
+
+</button>
+
+</div>
+
+	</form> 
+
+
+<div class="policy-modal" id="policyModal">
+
+    <div class="policy-content">
+
+        <span class="close-policy">&times;</span>
+
+        <h2>Privacy Policy</h2>
+
+        <p>
+            Nova Wealth Management respects your privacy and is committed to protecting your personal information.
+        </p>
+
+        <h3>Information We Collect</h3>
+
+        <p>
+            We may collect your name, contact number, email address, company details and any information you provide through this enquiry form.
+        </p>
+
+        <h3>How We Use Your Information</h3>
+
+        <p>
+            Your information is used solely to respond to your enquiry, provide our financial consultation services and improve our customer support.
+        </p>
+
+        <h3>Data Protection</h3>
+
+        <p>
+            Your personal information will be kept confidential and will not be disclosed to third parties without your consent unless required by law.
+        </p>
+
+    </div>
+
+
+</div>
+</section>
+<!-- ===========================================
+FOOTER
+=========================================== -->
+
+<footer>
+
+    <div class="container footer-wrapper">
+
+        <div class="footer-logo">
+
+            <img src="images/logo.png" alt="Nova Wealth">
+
+            <p>
+
+                Professional Financial Consultancy
+                For Individuals & Businesses.
+
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h4>Quick Links</h4>
+
+            <li>
+				<a href="aboutus.html">About Us</a>
+			</li>
+
+			<li>
+				<a href="services.html">Our Services</a>
+			</li>
+
+			<li>
+				<a href="contact.html">Contact Us</a>
+			</li>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h4>Services</h4>
+
+            <ul>
+
+                <li><a href="personal-loan.html">Personal Loan</a></li>
+
+				<li><a href="sme-loan.html">SME Loan</a></li>
+
+				<li><a href="business-loan.html">Business Loan</a></li>
+
+				<li><a href="debt-consolidation.html">Debt Consolidation Loan</a></li>
+
+				<li><a href="house-refinance.html">House Refinance Loan</a></li>
+
+				<li><a href="cash-out-property.html">Cash Out Property</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h4>Follow Us</h4>
+
+            <div class="social-links">
+
+				<a href="https://www.facebook.com/p/Nova-Wealth-Management-61563498863387/"
+					target="_blank">
+
+					<i class="fa-brands fa-facebook-f"></i>
+
+				</a>
+
+
+				<a href="https://www.instagram.com/novawealthmanagement/"
+				    target = "_blank">
+
+					<i class="fa-brands fa-instagram"></i>
+
+				</a>
+
+</div>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        <p>
+
+            © 2026 Nova Wealth Management. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>
