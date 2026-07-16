@@ -204,10 +204,8 @@ window.location.href =
     alert(err.message);
 
 }
-
-}
-
     });
+}
 
 const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector("nav");
