@@ -202,7 +202,9 @@ window.location.href =
 
     console.error(err);
 
-    alert(err);
+    alert(err.message);
+
+}
 
 }
 
