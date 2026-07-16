@@ -240,15 +240,15 @@ NAVBAR
 
     z-index:999;
 	
-    overflow:hidden;
 
 }
 
-    .nav-container{
+.nav-container{
     display:flex;
     align-items:center;
     justify-content:space-between;
     height:72px;
+    position:relative;
 }
 
 .logo{
@@ -256,14 +256,23 @@ NAVBAR
 }
 
 nav{
-    flex:1;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+nav ul{
     display:flex;
-    justify-content:center;
+    gap:42px;
+    align-items:center;
 }
 
 .nav-container > .btn-primary{
     flex-shrink:0;
 }
+
+
 
 .logo img{
 
@@ -273,13 +282,6 @@ nav{
 
 }
 
-nav ul{
-
-    display:flex;
-
-    gap:42px;
-
-}
 
 nav a{
 

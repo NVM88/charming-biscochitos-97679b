@@ -72,3 +72,42 @@ if(achievement){
 
 }
 
+
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector("nav");
+const overlay = document.querySelector(".menu-overlay");
+
+if(menuToggle && nav && overlay){
+
+    const menuIcon = menuToggle.querySelector("i");
+
+    menuToggle.addEventListener("click",()=>{
+
+        nav.classList.toggle("active");
+        overlay.classList.toggle("active");
+
+        menuIcon.classList.toggle("fa-bars");
+        menuIcon.classList.toggle("fa-xmark");
+
+    });
+
+    overlay.addEventListener("click",closeMenu);
+
+    document.querySelectorAll("nav a").forEach(link=>{
+
+        link.addEventListener("click",closeMenu);
+
+    });
+
+    function closeMenu(){
+
+        nav.classList.remove("active");
+        overlay.classList.remove("active");
+
+        menuIcon.classList.remove("fa-xmark");
+        menuIcon.classList.add("fa-bars");
+
+    }
+
+}
+
