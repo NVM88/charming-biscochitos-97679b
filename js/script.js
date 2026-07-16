@@ -168,7 +168,7 @@ if(form){
 
         try {
 
-            await fetch("https://script.google.com/macros/s/AKfycby9TXXpRul1aDoD_UgRULcQGuEEu0Gpjpy1m0s962xmODL_VonTMG0g3ESbkrRM5FV3/exec", {
+            await fetch("https://script.google.com/macros/s/AKfycbxVleVrn8OCmt_ukRnXH145Gi0IgnvCUhBR4YFLWlrAqHZI_bit7RkMCH0XXmMRFSAobA/exec", {
                 method: "POST",
                 headers: {
 				"Content-Type": "application/json"
@@ -178,7 +178,7 @@ if(form){
 
             // Google Sheet 已成功写入
 
-const whatsappNumber = "01110622650";   // <-- 换成老板号码
+const whatsappNumber = "601110622650";   // <-- 换成老板号码
 
 const whatsappMessage =
 `Hi Nova Wealth Management,
