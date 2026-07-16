@@ -152,16 +152,19 @@ if(form){
         const email = form.email.value.trim();
 
         const data = {
-            name: form.name.value,
-            phone: form.phone.value,
-            email: email,
-            company: form.company.value,
-            position: form.position.value,
-            income: form.income.value,
-            concern: form.concern.value,
-            service: form.service.value,
-            message: form.message.value
-        };
+
+    name: form.name.value.trim(),
+    phone: form.phone.value.trim(),
+    email: form.email.value.trim(),
+    company: form.company.value.trim(),
+    position: form.position.value.trim(),
+    income: form.income.value,
+    concern: form.concern.value,
+    service: form.service.value,
+    message: form.message.value.trim(),
+    privacy: form.privacy.checked ? "Agreed" : "Not Agreed"
+
+};
 
         try {
 
@@ -173,8 +176,27 @@ if(form){
                 body: JSON.stringify(data)
             });
 
-            alert("Your enquiry has been submitted successfully!");
-            form.reset();
+            // Google Sheet 已成功写入
+
+const whatsappNumber = "01110622650";   // <-- 换成老板号码
+
+const whatsappMessage =
+`Hi Nova Wealth Management,
+
+My name is ${data.name}.
+
+I have submitted an enquiry through your website.
+
+Service:
+${data.service}
+
+Contact Number:
+${data.phone}`;
+
+form.reset();
+
+window.location.href =
+`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
         } catch(err){
 
