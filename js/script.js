@@ -171,8 +171,8 @@ if(form){
             await fetch("https://script.google.com/macros/s/AKfycby9TXXpRul1aDoD_UgRULcQGuEEu0Gpjpy1m0s962xmODL_VonTMG0g3ESbkrRM5FV3/exec", {
                 method: "POST",
                 headers: {
-                    "Content-Type":"text/plain;charset=utf-8"
-                },
+				"Content-Type": "application/json"
+			},
                 body: JSON.stringify(data)
             });
 
