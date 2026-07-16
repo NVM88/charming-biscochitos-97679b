@@ -171,7 +171,7 @@ if(form){
             await fetch("https://script.google.com/macros/s/AKfycbxVleVrn8OCmt_ukRnXH145Gi0IgnvCUhBR4YFLWlrAqHZI_bit7RkMCH0XXmMRFSAobA/exec", {
                 method: "POST",
                 headers: {
-				"Content-Type": ”text/plain;charset=utf-8“
+				"Content-Type": "text/plain;charset=utf-8"
 			},
                 body: JSON.stringify(data)
             });
@@ -208,8 +208,6 @@ window.location.href =
 }
 
     });
-
-}
 
 const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector("nav");
