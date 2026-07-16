@@ -1283,6 +1283,10 @@ SERVICES
 
 }
 
+.service-page{
+	padding-top:170px;
+}
+
 /*==================================================
 TESTIMONIALS
 ==================================================*/
@@ -3976,6 +3980,12 @@ RESPONSIVE
     gap:15px;
 }
 
+.service-page{
+	padding-top:110px 0 70px;
+}
+
+
+
 }
 
 /*====================
@@ -4322,11 +4332,14 @@ HAMBURGER MENU
     nav a{
     display:inline-block;
     width:auto;
+
+    color:#F5F5F5;
+    font-size:18px;
+    font-weight:600;
 }
 nav a:hover{
 
-    color:#B22234;
-
+    color:#C1121F;
     padding-left:10px;
 
 }
