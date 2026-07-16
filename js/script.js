@@ -171,14 +171,13 @@ if(form){
             await fetch("https://script.google.com/macros/s/AKfycbxVleVrn8OCmt_ukRnXH145Gi0IgnvCUhBR4YFLWlrAqHZI_bit7RkMCH0XXmMRFSAobA/exec", {
                 method: "POST",
                 headers: {
-				"Content-Type": "application/json"
+				"Content-Type": ”text/plain;charset=utf-8“
 			},
                 body: JSON.stringify(data)
             });
 
-            // Google Sheet 已成功写入
 
-const whatsappNumber = "601110622650";   // <-- 换成老板号码
+const whatsappNumber = "601110622650";   
 
 const whatsappMessage =
 `Hi Nova Wealth Management,
