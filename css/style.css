@@ -247,8 +247,22 @@ NAVBAR
     .nav-container{
     display:flex;
     align-items:center;
+    justify-content:space-between;
     height:72px;
-    position:relative;
+}
+
+.logo{
+    flex-shrink:0;
+}
+
+nav{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.nav-container > .btn-primary{
+    flex-shrink:0;
 }
 
 .logo img{
