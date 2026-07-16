@@ -244,11 +244,26 @@ NAVBAR
 
 }
 
-    .nav-container{
+   .nav-container{
     display:flex;
     align-items:center;
     height:72px;
     position:relative;
+}
+
+nav{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+nav ul{
+    display:flex;
+    gap:42px;
+}
+
+.btn-primary{
+    margin-left:auto;
 }
 
 .logo img{
@@ -4109,40 +4124,48 @@ RESPONSIVE
 	}
 }
 
+/* ==========================
+Desktop Navigation
+========================== */
 
-/* ===== Desktop Navigation Fix ===== */
 @media (min-width:769px){
 
     nav{
-        flex:1;
-        display:flex !important;
-        justify-content:center;
-        align-items:center;
+
         position:static;
+
+        display:flex !important;
+
         visibility:visible !important;
+
         opacity:1 !important;
+
         transform:none !important;
+
         pointer-events:auto !important;
+
         width:auto;
+
         height:auto;
+
         background:none;
+
         padding:0;
+
     }
 
-    nav ul{
-        display:flex;
-        align-items:center;
-        gap:42px;
+    .menu-toggle{
+
+        display:none;
+
     }
 
-    .nav-container .btn-primary{
-        margin-left:auto;
-    }
-
-    .menu-toggle,
     .menu-overlay{
-        display:none !important;
+
+        display:none;
+
     }
+
 }
 
 /*==================================================
