@@ -183,7 +183,7 @@ if(form){
             });
 
 
-const whatsappNumber = "601110622650";   
+const whatsappNumber = "60124541017";   
 
 const whatsappMessage =
 `Hi Nova Wealth Management,
