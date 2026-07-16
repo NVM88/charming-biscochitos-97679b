@@ -1,4 +1,3 @@
-alert("NEW SCRIPT");
 
 //========================
 // Sticky Navbar
@@ -137,11 +136,16 @@ if (modal && policyLink && closePolicy) {
 
 }
 
-const form = document.getElementById("contactForm");
+const form =
+    document.getElementById("contactForm") ||
+    document.getElementById("dashboardForm");
 
 if(form){
 
     form.addEventListener("submit", async function (e) {
+		
+		console.log("Submit Event");
+		alert("Submit Event");
 
         e.preventDefault();
 
@@ -170,7 +174,7 @@ if(form){
 
         try {
 
-            await fetch("https://script.google.com/macros/s/AKfycbxVleVrn8OCmt_ukRnXH145Gi0IgnvCUhBR4YFLWlrAqHZI_bit7RkMCH0XXmMRFSAobA/exec", {
+            await fetch("https://script.google.com/macros/s/AKfycbyy30wEdLWtnjErRqzY1Tl1MjNaHw0Q7YB3X05-EuUH9kVGLAzYOMzPuoOY7W5Uk1vS/exec", {
                 method: "POST",
                 headers: {
 				"Content-Type": "text/plain;charset=utf-8"
