@@ -198,11 +198,13 @@ form.reset();
 window.location.href =
 `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
-        } catch(err){
+        }catch(err){
 
-            alert("Submission failed.");
+    console.error(err);
 
-        }
+    alert(err);
+
+}
 
     });
 
