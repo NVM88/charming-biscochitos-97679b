@@ -3957,6 +3957,24 @@ RESPONSIVE
         font-size:24px;
 
     }
+	
+	.service-showcase{
+    grid-template-columns:1fr;
+    gap:35px;
+}
+
+.service-image img{
+    height:260px;
+}
+
+.service-list{
+    width:100%;
+}
+
+.service-item{
+    grid-template-columns:45px 1fr 25px;
+    gap:15px;
+}
 
 }
 
