@@ -2973,29 +2973,24 @@ label.checkbox{
     width:100%;
 }
 
+
+
 .checkbox{
     display:flex;
     align-items:flex-start;
-    width:100%;
+    gap:15px;
 }
 
 .checkbox input{
-    flex:0 0 auto;
+    flex-shrink:0;
     margin-top:4px;
 }
 
-.checkbox span{
+.checkbox-text{
     flex:1;
     min-width:0;
-    width:auto;
-
-    display:block;
-
-    white-space:normal;
-
-    word-break:normal;
-
-    overflow-wrap:break-word;
+    line-height:1.8;
+    color:#666;
 }
 
 /*==============================
