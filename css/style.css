@@ -2968,39 +2968,35 @@ PRIVACY
 
 }
 
+label.checkbox{
+    display:flex;
+    width:100%;
+}
 
 .checkbox{
-
     display:flex;
-
     align-items:flex-start;
-
-    gap:15px;
-
-    cursor:pointer;
-
+    width:100%;
 }
-
 
 .checkbox input{
-
-    margin-top:5px;
-
-    transform:scale(1.2);
-
+    flex:0 0 auto;
+    margin-top:4px;
 }
-
 
 .checkbox span{
+    flex:1;
+    min-width:0;
+    width:auto;
 
-    color:#666;
+    display:block;
 
-    line-height:1.8;
+    white-space:normal;
 
-    font-size:15px;
+    word-break:normal;
 
+    overflow-wrap:break-word;
 }
-
 
 /*==============================
 BUTTON
