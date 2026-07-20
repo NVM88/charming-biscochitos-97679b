@@ -4371,3 +4371,36 @@ nav::before{
     height:auto;
     object-fit:contain;
 }
+
+.footer-contact{
+    margin-top:25px;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    margin-bottom:12px;
+
+    color:#fff;
+    font-size:15px;
+}
+
+.contact-item i{
+    width:18px;
+
+    color:#7B0D1E;
+
+    font-size:16px;
+}
+
+.contact-item a{
+    color:#D6D9DE;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.contact-item a:hover{
+    color:#fff;
+}
