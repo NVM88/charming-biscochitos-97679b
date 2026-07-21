@@ -81,14 +81,31 @@ if(menuToggle && nav && overlay){
 
     const menuIcon = menuToggle.querySelector("i");
 
+    menuToggle.setAttribute("role", "button");
+    menuToggle.setAttribute("tabindex", "0");
+    menuToggle.setAttribute("aria-label", "Open navigation menu");
+    menuToggle.setAttribute("aria-expanded", "false");
+
+    function toggleMenu(){
+        const isOpen = nav.classList.toggle("active");
+        overlay.classList.toggle("active", isOpen);
+        document.body.classList.toggle("menu-open", isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+
+        menuIcon.classList.toggle("fa-bars", !isOpen);
+        menuIcon.classList.toggle("fa-xmark", isOpen);
+    }
+
     menuToggle.addEventListener("click",()=>{
+        toggleMenu();
+    });
 
-        nav.classList.toggle("active");
-        overlay.classList.toggle("active");
-
-        menuIcon.classList.toggle("fa-bars");
-        menuIcon.classList.toggle("fa-xmark");
-
+    menuToggle.addEventListener("keydown", function(e){
+        if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            toggleMenu();
+        }
     });
 
     overlay.addEventListener("click",closeMenu);
@@ -99,10 +116,19 @@ if(menuToggle && nav && overlay){
 
     });
 
+    document.addEventListener("keydown", function(e){
+        if (e.key === "Escape" && nav.classList.contains("active")) {
+            closeMenu();
+        }
+    });
+
     function closeMenu(){
 
         nav.classList.remove("active");
         overlay.classList.remove("active");
+        document.body.classList.remove("menu-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
 
         menuIcon.classList.remove("fa-xmark");
         menuIcon.classList.add("fa-bars");
@@ -110,4 +136,8 @@ if(menuToggle && nav && overlay){
     }
 
 }
+
+document.querySelectorAll('a[target="_blank"]').forEach(link => {
+    link.rel = "noopener noreferrer";
+});
 

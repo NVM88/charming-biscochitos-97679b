@@ -34,3 +34,7 @@ fadeItems.forEach(item=>{
 observer.observe(item);
 
 });
+
+document.querySelectorAll('a[target="_blank"]').forEach(link => {
+    link.rel = "noopener noreferrer";
+});
