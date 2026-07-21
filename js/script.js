@@ -250,3 +250,12 @@ if(menuToggle && nav && overlay){
     }
 
 }
+
+const heroSwiper = new Swiper(".heroSwiper", {
+    loop: true,
+    speed: 800,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+});
