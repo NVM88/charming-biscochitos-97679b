@@ -4110,7 +4110,7 @@ RESPONSIVE
 
 		
 		.hero-wrapper{
-    display:flex;
+    display:grid;
     flex-direction:column-reverse;
     gap:30px;
 }
