@@ -552,7 +552,7 @@ HERO
     height:800px;
 }
 
-..heroSwiper .swiper-wrapper{
+.heroSwiper .swiper-wrapper{
     height:100%;
 }
 
@@ -4106,13 +4106,6 @@ RESPONSIVE
     display:inline-block;
     margin:24px 0 18px;
 	font-size:10px;
-}
-
-		
-		.hero-wrapper{
-    display:grid;
-    flex-direction:column-reverse;
-    gap:30px;
 }
 
     .section-heading h2{
