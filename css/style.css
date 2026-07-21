@@ -4027,28 +4027,57 @@ RESPONSIVE
     }
 
     .hero{
-        padding-top:95px;
-    }
-
+		text-align:left;
+	}
+	
     .hero h1{
-        font-size:34px;
-        line-height:1.2;
+         text-align:left;
+		line-height:1.1;
+		font-size:24px;
     }
+	
+	.hero-content h1 span{
+		color:#8B1E2D;
+		font-weight:700;
+	}
 
     .hero p{
-        font-size:15px;
+		text-align:left;
+        font-size:14px;
+		margin:24px 0 0;
+		line-height:1.8;
+		max-width:420px;
     }
 
     .hero-right img{
-        max-width:280px;
-        height:330px;
-        border-radius:20px;
+        height:200px;
+        max-width:420px;
+		border-radius:16px;
+		object-fit:cover;
     }
 
-    .hero-tag{
-        font-size:12px;
-        padding:8px 16px;
+    .hero-buttons{
+        flex-direction:column;
+        width:100%;
     }
+
+    .hero-buttons .btn-primary,
+	.hero-buttons .btn-secondary{
+    width:100%;
+	}
+	
+	.hero-left,
+	.hero-right{
+		width:100%;
+		max-width:420px;
+		margin:0 auto;
+	}
+	
+	.hero-tag{
+    display:inline-block;
+    margin:24px 0 18px;
+	font-size:13px;
+}
 
     .section-heading h2{
         font-size:30px;
