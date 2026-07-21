@@ -4033,7 +4033,7 @@ RESPONSIVE
     .hero h1{
          text-align:left;
 		line-height:1.1;
-		font-size:24px;
+		font-size:26px;
     }
 	
 	.hero-content h1 span{
@@ -4076,7 +4076,7 @@ RESPONSIVE
 	.hero-tag{
     display:inline-block;
     margin:24px 0 18px;
-	font-size:13px;
+	font-size:10px;
 }
 
     .section-heading h2{
