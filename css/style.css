@@ -3580,8 +3580,10 @@ RESPONSIVE
 }
 
 .heroSwiper{
+    width:92%;
     max-width:420px;
     height:200px;
+    margin:0 auto;
 }
     .hero-highlights{
         flex-direction:column;
@@ -4069,13 +4071,16 @@ RESPONSIVE
 
     .hero-right img{
         height:200px;
-        max-width:420px;
+        max-width:410px;
 		border-radius:16px;
 		object-fit:cover;
     }
 	
 	.heroSwiper{
-		width:100%;
+		width:92%;
+    max-width:420px;
+    height:200px;
+    margin:0 auto;
 	}
 
 	.heroSwiper .swiper-slide{
