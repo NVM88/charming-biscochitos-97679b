@@ -306,6 +306,13 @@ document.querySelectorAll('a[target="_blank"]').forEach(link => {
 if(document.querySelector(".heroSwiper")){
     new Swiper(".heroSwiper", {
         loop: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        centeredSlides: false,
+        watchOverflow: true,
+        observer: true,
+        observeParents: true,
+        updateOnWindowResize: true,
         speed: 800,
         autoplay: {
             delay: 4000,
