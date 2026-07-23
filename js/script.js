@@ -115,6 +115,39 @@ if(document.querySelector(".valueSwiper")){
 });
 
 }
+
+const heroImage = document.querySelector(".hero-image");
+
+if(heroImage){
+
+    const heroImages = [
+        "images/hero.jpg",
+        "images/hero1.jpg",
+        "images/hero2.jpg",
+        "images/hero3.jpg",
+        "images/hero4.jpg",
+        "images/hero5.jpg",
+        "images/hero6.jpg"
+    ];
+
+    heroImages.forEach(src => {
+        const image = new Image();
+        image.src = src;
+    });
+
+    let heroImageIndex = 0;
+
+    setInterval(() => {
+        heroImageIndex = (heroImageIndex + 1) % heroImages.length;
+        heroImage.classList.add("is-changing");
+
+        setTimeout(() => {
+            heroImage.src = heroImages[heroImageIndex];
+            heroImage.classList.remove("is-changing");
+        }, 450);
+    }, 4000);
+
+}
     
 const modal = document.getElementById("policyModal");
 const policyLink = document.querySelector(".policy-link");

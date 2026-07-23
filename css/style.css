@@ -539,6 +539,15 @@ HERO
 
 
 }
+
+.hero-image{
+    opacity:1;
+    transition:opacity .45s ease;
+}
+
+.hero-image.is-changing{
+    opacity:0;
+}
 .hero-left,
 .hero-right{
 
