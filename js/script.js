@@ -116,9 +116,9 @@ if(document.querySelector(".valueSwiper")){
 
 }
 
-const heroImage = document.querySelector(".hero-image");
+const heroImageFrame = document.querySelector(".hero-image-frame");
 
-if(heroImage){
+if(heroImageFrame){
 
     const heroImages = [
         "images/hero.jpg",
@@ -135,17 +135,23 @@ if(heroImage){
         image.src = src;
     });
 
+    const heroImageSlots = heroImageFrame.querySelectorAll(".hero-image");
     let heroImageIndex = 0;
+    let activeHeroSlot = 0;
 
-    setInterval(() => {
+    if(heroImageSlots.length > 1){
+
+        setInterval(() => {
         heroImageIndex = (heroImageIndex + 1) % heroImages.length;
-        heroImage.classList.add("is-changing");
+        const nextHeroSlot = activeHeroSlot === 0 ? 1 : 0;
 
-        setTimeout(() => {
-            heroImage.src = heroImages[heroImageIndex];
-            heroImage.classList.remove("is-changing");
-        }, 450);
-    }, 4000);
+        heroImageSlots[nextHeroSlot].src = heroImages[heroImageIndex];
+        heroImageSlots[nextHeroSlot].classList.add("is-active");
+        heroImageSlots[activeHeroSlot].classList.remove("is-active");
+        activeHeroSlot = nextHeroSlot;
+        }, 4000);
+
+    }
 
 }
     
