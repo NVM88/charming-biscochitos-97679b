@@ -3249,7 +3249,7 @@ RESPONSIVE
 
     .hero-left{
         order:2;
-        text-align:center;
+        text-align:left;
     }
 
     .hero-right{
@@ -3265,16 +3265,16 @@ RESPONSIVE
     }
 
     .hero p{
-        margin:25px auto 0;
+        margin:25px 0 0;
     }
 
     .hero-buttons{
-        justify-content:center;
+        justify-content:flex-start;
         flex-wrap:wrap;
     }
 
     .hero-highlights{
-        justify-content:center;
+        justify-content:flex-start;
         flex-wrap:wrap;
     }
 
@@ -3605,16 +3605,16 @@ RESPONSIVE
     }
 
 	.hero{
-		text-align:center;
+		text-align:left;
 	}
 	
     .hero h1{
-        text-align:center;
+        text-align:left;
 		line-height:1.1;
 		font-size:30px;
         max-width:560px;
-        margin-left:auto;
-        margin-right:auto;
+        margin-left:0;
+        margin-right:0;
     }
 	
 	.hero-content h1 span{
@@ -3623,9 +3623,9 @@ RESPONSIVE
 	}
 
     .hero p{
-		text-align:center;
+		text-align:left;
         font-size:14px;
-		margin:24px auto 0;
+		margin:24px 0 0;
 		line-height:1.8;
 		max-width:560px;
     }
