@@ -3024,14 +3024,14 @@ PRIVACY
 BUTTON
 ==============================*/
 
-.submit-area{
+.contact-form-section .submit-area{
 
     text-align:center;
 
 }
 
 
-.submit-area .btn-primary{
+.contact-form-section .submit-area .btn-primary{
 
     width:100%;
 
@@ -3235,7 +3235,7 @@ RESPONSE NOTE
 
 }
 
-.submit-area{
+.dashboard-contact-form .submit-area{
 
     display:flex;
 
@@ -3243,7 +3243,7 @@ RESPONSE NOTE
 
 }
 
-.submit-area .btn-primary{
+.dashboard-contact-form .submit-area .btn-primary{
 
     width:220px;
 
@@ -3257,13 +3257,13 @@ grid-template-columns:1fr;
 
 }
 
-.submit-area{
+.dashboard-contact-form .submit-area{
 
 justify-content:center;
 
 }
 
-.submit-area .btn-primary{
+.dashboard-contact-form .submit-area .btn-primary{
 
 width:100%;
 
@@ -3306,7 +3306,7 @@ RESPONSIVE
 
     .hero-right{
         order:1;
-        justify-content:center;
+        justify-content:flex-start;
     }
 
     .hero-right img{
@@ -3586,7 +3586,8 @@ RESPONSIVE
 .heroSwiper{
 	width:100%;
 	max-width:none;
-	margin:0;
+	margin-left:0;
+	margin-right:auto;
     height:200px;
 }
     .hero-highlights{
@@ -3977,13 +3978,15 @@ RESPONSIVE
 
 
 
-    .submit-area{
+    .contact-form-section .submit-area,
+    .dashboard-contact-form .submit-area{
 
         justify-content:center;
 
     }
 
-    .submit-area .btn-primary{
+    .contact-form-section .submit-area .btn-primary,
+    .dashboard-contact-form .submit-area .btn-primary{
 
         width:100%;
 
@@ -4030,7 +4033,7 @@ RESPONSIVE
 }
 
 .service-page{
-	padding-top:110px 0 70px;
+	padding:110px 0 70px;
 }
 
 
@@ -4083,12 +4086,13 @@ RESPONSIVE
 	.heroSwiper{
 		width:100%;
 		max-width:none;
-		margin:0;
+		margin-left:0;
+		margin-right:auto;
 	}
 
 	.heroSwiper .swiper-slide{
 		display:flex;
-		justify-content:center;
+		justify-content:flex-start;
 	}
 
     .hero-buttons{
@@ -4470,7 +4474,7 @@ nav::before{
     margin-top:25px;
 }
 
-.contact-item{
+footer .contact-item{
     display:flex;
     align-items:center;
     gap:12px;
@@ -4481,7 +4485,7 @@ nav::before{
     font-size:15px;
 }
 
-.contact-item i{
+footer .contact-item i{
     width:34px;
     height:34px;
 
@@ -4498,12 +4502,12 @@ nav::before{
     font-size:15px;
 }
 
-.contact-item a{
+footer .contact-item a{
     color:#D6D9DE;
     text-decoration:none;
     transition:.3s;
 }
 
-.contact-item a:hover{
+footer .contact-item a:hover{
     color:#fff;
 }
