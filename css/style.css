@@ -3590,6 +3590,11 @@ RESPONSIVE
 	margin-right:auto;
     height:200px;
 }
+
+.hero-right .heroSwiper{
+    margin-left:0;
+    margin-right:auto;
+}
     .hero-highlights{
         flex-direction:column;
         align-items:center;
@@ -4090,6 +4095,11 @@ RESPONSIVE
 		margin-right:auto;
 	}
 
+	.hero-right .heroSwiper{
+		margin-left:0;
+		margin-right:auto;
+	}
+
 	.heroSwiper .swiper-slide{
 		display:flex;
 		justify-content:flex-start;
@@ -4108,8 +4118,8 @@ RESPONSIVE
 	.hero-left,
 	.hero-right{
 		width:100%;
-		max-width:420px;
-		margin:0 auto;
+		max-width:none;
+		margin:0;
 	}
 	
 	.hero-tag{
