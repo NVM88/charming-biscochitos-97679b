@@ -149,7 +149,7 @@ if(heroImageFrame){
         heroImageSlots[nextHeroSlot].classList.add("is-active");
         heroImageSlots[activeHeroSlot].classList.remove("is-active");
         activeHeroSlot = nextHeroSlot;
-        }, 4000);
+        }, 6000);
 
     }
 
