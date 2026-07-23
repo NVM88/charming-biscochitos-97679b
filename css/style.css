@@ -3211,6 +3211,33 @@ RESPONSE NOTE
 }
 
 /*==================================================
+HAMBURGER MENU
+==================================================*/
+
+.menu-toggle{
+    display:none;
+    position:relative;
+    z-index:1002;
+    cursor:pointer;
+}
+
+.menu-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(13,27,42,.65);
+    backdrop-filter:blur(6px);
+    opacity:0;
+    visibility:hidden;
+    transition:.35s;
+    z-index:998;
+}
+
+.menu-overlay.active{
+    opacity:1;
+    visibility:visible;
+}
+
+/*==================================================
 RESPONSIVE
 ==================================================*/
 
@@ -3499,6 +3526,10 @@ RESPONSIVE
         font-size:22px;
         color:#0D1B2A;
         border-radius:10px;
+    }
+
+    body.menu-open .menu-toggle{
+        color:#fff;
     }
 
     .nav-container{
@@ -4322,42 +4353,6 @@ RESPONSIVE
     .menu-overlay{
         display:none !important;
     }
-}
-
-/*==================================================
-HAMBURGER MENU
-==================================================*/
-
-.menu-toggle{
-
-    display:none;
-
-}
-
-.menu-overlay{
-
-    position:fixed;
-    inset:0;
-
-   background:rgba(13,27,42,.65);
-
-    backdrop-filter:blur(6px);
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transition:.35s;
-
-    z-index:998;
-
-}
-
-.menu-overlay.active{
-
-    opacity:1;
-    visibility:visible;
-
 }
 
 .social-icon-img{
